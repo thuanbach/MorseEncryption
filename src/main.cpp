@@ -7,9 +7,15 @@
 //============================================================================
 
 #include <iostream>
+#include "ConsoleEncryptionApp.h"
+
 using namespace std;
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!d
+
+	ConsoleEncryptionApp app;
+
+	app.start();
+
 	return 0;
 }
