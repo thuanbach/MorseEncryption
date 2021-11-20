@@ -27,7 +27,6 @@ public:
 private:
 
 	MorseTree* tree;
-
 };
 
 #endif /* MORSEENCRYPTION_H_ */

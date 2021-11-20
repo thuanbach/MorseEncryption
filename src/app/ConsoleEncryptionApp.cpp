@@ -9,7 +9,8 @@
 
 using namespace std;
 
-#include <ConsoleEncryptionApp.h>
+#include "ConsoleEncryptionApp.h"
+#include "MorseEncryption.h"
 
 ConsoleEncryptionApp::ConsoleEncryptionApp() {
 }
@@ -17,20 +18,25 @@ ConsoleEncryptionApp::ConsoleEncryptionApp() {
 ConsoleEncryptionApp::~ConsoleEncryptionApp() {
 }
 
+void ConsoleEncryptionApp::start(const string &file) {
 
-void ConsoleEncryptionApp::start() {
+	MorseEncryption encryption(file);
 
-	string line;
+	string message;
 
 	while (true) {
-		 cout << "Enter a message. (Enter \"exit\" to exit)> ";
-		 getline(cin, line);
+		cout << "Enter a message. (Enter \"exit\" to exit)> ";
+		getline(cin, message);
 
-		 if (line == "exit") {
-			 break;
-		 }
+		if (message == "exit") {
+			break;
+		}
 
+		cout << "Coded message" << endl;
+		string encoded_message = encryption.encode(message);
+
+		cout << "Decoded message" << endl;
+		string decoded_message = encryption.decode(encoded_message);
 	}
-
 
 }

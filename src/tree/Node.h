@@ -13,7 +13,7 @@
 using namespace std;
 
 struct Node {
-	char letter;
+	string letter;
 	string code;
 	Node* left_node;
 	Node* right_node;

@@ -15,7 +15,7 @@ int main() {
 
 	ConsoleEncryptionApp app;
 
-	app.start();
+	app.start("morse_codes.txt");
 
 	return 0;
 }
