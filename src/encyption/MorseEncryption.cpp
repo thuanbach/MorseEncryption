@@ -24,9 +24,11 @@ MorseEncryption::~MorseEncryption() {
 string MorseEncryption:: encode(string message) {
 	string encoded_message;
 
+	cout << "Message--------" << message << endl;
+
 	for (unsigned int i=0; i < message.length(); i++) {
 
-		string letter = "" + message.at(i);
+		string letter =  message.substr(i, 1);
 
 		Node* node = tree->search_node_by_letter(letter);
 

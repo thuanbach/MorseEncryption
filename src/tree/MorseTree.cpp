@@ -19,6 +19,9 @@ MorseTree::~MorseTree() {
 }
 
 MorseTree::MorseTree(const string &file_path) {
+	root = new Node();
+	root->left_node = NULL;
+	root->right_node = NULL;
 	init_morse_tree_from_file(file_path);
 }
 
@@ -27,9 +30,12 @@ Node* MorseTree::parse_a_node_from_raw_text_line(const string &line){
 
 	Node* node = new Node();
 
-	node->letter = line.at(0);
+	node->letter = line.substr(0, 1);
 
 	node->code = line.substr(1, line.length()-1);
+
+	node->left_node = NULL;
+	node->right_node = NULL;
 
 	return node;
 }
@@ -44,13 +50,14 @@ Node* MorseTree::search_node(const string &text, const string type) {
 bool match(Node* node, const string &text, const SearchType type) {
 
 	if (type ==  BY_LETTER ) {
-		return node->letter == text;
+		return (node->letter.compare(text) == 0);
 	}
 
-	return node->code == text;
+	return node->code.compare(text) == 0;
 }
 
 Node* MorseTree::search(Node* node, const string &text, const SearchType type) {
+
 	if (node == NULL) return NULL;
 
 	bool matched = match(node, text, type);
@@ -92,14 +99,14 @@ void MorseTree::insert_node_recursive(Node* parent, Node* node, const int level)
 		if (parent->left_node == NULL) {
 			parent->left_node = node;
 		} else {
-			insert_node_recursive(root->left_node, node, level+1);
+			insert_node_recursive(parent->left_node, node, level+1);
 		}
 
 	} else {
 		if (parent->right_node == NULL) {
 			parent->right_node = node;
 		} else {
-			insert_node_recursive(root->right_node, node, level+1);
+			insert_node_recursive(parent->right_node, node, level+1);
 		}
 	}
 }
@@ -108,9 +115,22 @@ void MorseTree::insert_node(Node* node){
 	insert_node_recursive(root, node, 0);
 }
 
+void MorseTree::traverse(){
+	traverse_with_node(root->left_node);
+	traverse_with_node(root->right_node);
+}
+
+void MorseTree::traverse_with_node(Node* node){
+	if (node != NULL) {
+		// cout << "letter " << node->letter << " code " << node->code;
+		traverse_with_node(node->left_node);
+		traverse_with_node(node->right_node);
+	}
+
+}
+
+
  void MorseTree::init_morse_tree_from_file(const string &file_path){
-
-
 
 	ifstream ifsCodes;
 
@@ -121,14 +141,14 @@ void MorseTree::insert_node(Node* node){
 
 	string line;
 
-	while (getline(ifsCodes, line)) {
+	cout << endl;
 
-		cout << line << endl;
+	while (getline(ifsCodes, line)) {
 
 		Node* node = parse_a_node_from_raw_text_line(line);
 
-		cout << node << endl;
-
 		insert_node(node);
 	}
+
+	traverse();
 }

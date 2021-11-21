@@ -15,7 +15,7 @@ int main() {
 
 	ConsoleEncryptionApp app;
 
-	app.start("morse_codes.txt");
+	app.start("D:\\ThuanBach\\UR Computer Science\\Eclipse\\CS700Assignment5\\src\\codes\\morse_codes.txt");
 
 	return 0;
 }

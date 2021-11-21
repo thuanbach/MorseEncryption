@@ -23,6 +23,10 @@ public:
 	Node* search_node_by_letter(const string &letter);
 	Node* search_node_by_code(const string &code);
 
+	void traverse();
+
+	void traverse_with_node(Node* node);
+
 private:
 	Node* search(Node* node, const string &text, const SearchType type);
 
