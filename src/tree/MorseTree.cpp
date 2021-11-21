@@ -80,7 +80,7 @@ Node* MorseTree::search_node_by_letter(const string &letter){
 
 	Node* node = search(root->left_node, letter, BY_LETTER);
 
-	if (node == NULL){
+	if (node != NULL){
 		return node;
 	}
 
