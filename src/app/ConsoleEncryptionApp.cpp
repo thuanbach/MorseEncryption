@@ -23,7 +23,7 @@ void ConsoleEncryptionApp::start(const string &file) {
 	MorseEncryption encryption(file);
 	string message;
 
-	string encoded_message = encryption.encode("e");
+	string encoded_message = encryption.encode("hello world");
 	cout << "Coded message:" << encoded_message << endl;
 
 

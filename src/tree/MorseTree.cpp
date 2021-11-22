@@ -32,7 +32,7 @@ Node* MorseTree::parse_a_node_from_raw_text_line(const string &line){
 
 	node->letter = line.substr(0, 1);
 
-	node->code = line.substr(1, line.length()-1);
+	node->code = line.substr(1, line.length()-2);
 
 	node->left_node = NULL;
 	node->right_node = NULL;
@@ -89,7 +89,13 @@ Node* MorseTree::search_node_by_letter(const string &letter){
 
 Node* MorseTree::search_node_by_code(const string &code){
 
-	return search(root->left_node, code, BY_CODE);
+	Node* node = search(root->left_node, code, BY_CODE);
+
+	if (node != NULL){
+		return node;
+	}
+
+	return search(root->right_node, code, BY_CODE);
 }
 
 
@@ -116,13 +122,14 @@ void MorseTree::insert_node(Node* node){
 }
 
 void MorseTree::traverse(){
+	cout << endl;
 	traverse_with_node(root->left_node);
 	traverse_with_node(root->right_node);
 }
 
 void MorseTree::traverse_with_node(Node* node){
 	if (node != NULL) {
-		// cout << "letter " << node->letter << " code " << node->code;
+		cout << " letter " << node->letter << " code " << node->code <<  " code length " << node->code.length() << endl ;
 		traverse_with_node(node->left_node);
 		traverse_with_node(node->right_node);
 	}
@@ -138,10 +145,7 @@ void MorseTree::traverse_with_node(Node* node){
 
 	cout << file_path;
 
-
 	string line;
-
-	cout << endl;
 
 	while (getline(ifsCodes, line)) {
 
