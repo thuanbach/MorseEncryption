@@ -32,8 +32,9 @@ string MorseEncryption::encode(string message) {
 			encoded_message.append(letter);
 		} else {
 			encoded_message.append(node->code);
-			encoded_message.append(" ");
 		}
+
+		encoded_message.append(" ");
 	}
 
 	return encoded_message;
@@ -55,7 +56,6 @@ string MorseEncryption::decode(string encoded_message) {
 				if (node == NULL) {
 					message.append(code);
 				} else {
-
 					message.append(node->letter);
 				}
 
