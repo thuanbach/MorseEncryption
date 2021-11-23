@@ -48,9 +48,14 @@ Node* MorseTree::search_node(const string &text, const string type) {
 }
 
 bool match(Node* node, const string &text, const SearchType type) {
-
+	
 	if (type ==  BY_LETTER ) {
-		return (node->letter.compare(text) == 0);
+	
+		string upppercaseLetter = "";
+		
+		upppercaseLetter  += node->letter.at(0) - 32;
+
+		return (node->letter.compare(text) == 0) || (upppercaseLetter.compare(text) == 0);
 	}
 
 	return node->code.compare(text) == 0;
@@ -122,7 +127,7 @@ void MorseTree::insert_node(Node* node){
 }
 
 void MorseTree::traverse(){
-	cout << endl;
+
 	traverse_with_node(root->left_node);
 	traverse_with_node(root->right_node);
 }

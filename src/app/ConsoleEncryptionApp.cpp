@@ -21,6 +21,7 @@ ConsoleEncryptionApp::~ConsoleEncryptionApp() {
 void ConsoleEncryptionApp::start(const string &file) {
 
 	MorseEncryption encryption(file);
+
 	string message = "";
 
 	while (true) {

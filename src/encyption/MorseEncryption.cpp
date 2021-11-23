@@ -67,5 +67,8 @@ string MorseEncryption::decode(string encoded_message) {
 
 	}
 
+	if (code != "" ) {
+		message.append(code);
+	}
 	return message;
 }
