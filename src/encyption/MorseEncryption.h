@@ -16,6 +16,7 @@ using namespace std;
 class MorseEncryption {
 
 public:
+	MorseEncryption();
 	MorseEncryption(string file_path);
 
 	virtual ~MorseEncryption();
