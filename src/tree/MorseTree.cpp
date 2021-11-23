@@ -129,7 +129,6 @@ void MorseTree::traverse(){
 
 void MorseTree::traverse_with_node(Node* node){
 	if (node != NULL) {
-		cout << " letter " << node->letter << " code " << node->code <<  " code length " << node->code.length() << endl ;
 		traverse_with_node(node->left_node);
 		traverse_with_node(node->right_node);
 	}
@@ -143,7 +142,6 @@ void MorseTree::traverse_with_node(Node* node){
 
 	ifsCodes.open(file_path);
 
-	cout << file_path;
 
 	string line;
 
@@ -153,6 +151,4 @@ void MorseTree::traverse_with_node(Node* node){
 
 		insert_node(node);
 	}
-
-	traverse();
 }

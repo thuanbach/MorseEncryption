@@ -21,15 +21,7 @@ ConsoleEncryptionApp::~ConsoleEncryptionApp() {
 void ConsoleEncryptionApp::start(const string &file) {
 
 	MorseEncryption encryption(file);
-	string message;
-
-	string encoded_message = encryption.encode("hello world");
-	cout << "Coded message:" << encoded_message << endl;
-
-
-	string decoded_message = encryption.decode(encoded_message);
-	cout << "Decoded message" << decoded_message << endl;
-
+	string message = "";
 
 	while (true) {
 		cout << "Enter a message. (Enter \"exit\" to exit)> ";
@@ -41,11 +33,13 @@ void ConsoleEncryptionApp::start(const string &file) {
 
 
 		string encoded_message = encryption.encode(message);
-		cout << "Coded message:" << encoded_message << endl;
+		cout << "Coded message" << endl;
+		cout << encoded_message << endl;
 
 
 		string decoded_message = encryption.decode(encoded_message);
-		cout << "Decoded message" << decoded_message << endl;
+		cout << "Decoded message" << endl;
+		cout << decoded_message << endl;
 	}
 
 }
