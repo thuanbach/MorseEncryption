@@ -8,10 +8,15 @@
 
 #include <iostream>
 #include "ConsoleEncryptionApp.h"
+#include <vector>
+#include <string>       // std::string
+#include <iostream>     // std::cout
+#include <sstream>      // std::istringstream
 
 using namespace std;
 
 int main() {
+
 
 	ConsoleEncryptionApp app;
 
