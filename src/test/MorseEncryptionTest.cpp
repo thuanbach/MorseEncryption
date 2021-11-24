@@ -138,9 +138,17 @@ void test_other_characters(MorseEncryption &encrytion) {
 	string encoded_message = encrytion.encode(message);
 	string decoded_message = encrytion.decode(encoded_message);
 
-
-
 	cout << "Test other characters: " << verify_result(decoded_message == message) << endl;
+}
+
+
+void test_space_between_words(MorseEncryption &encrytion) {
+	string message = "	h	w	a  q";
+
+	string encoded_message = encrytion.encode(message);
+	string decoded_message = encrytion.decode(encoded_message);
+
+	cout << "Test space between characters: " << verify_result(decoded_message == message) << endl;
 }
 
 void test_morse_encrytion(string file_path) {
@@ -151,4 +159,6 @@ void test_morse_encrytion(string file_path) {
 	test_uppercase_alphabets(encryption);
 
 	test_other_characters(encryption);
+
+	test_space_between_words(encryption);
 }

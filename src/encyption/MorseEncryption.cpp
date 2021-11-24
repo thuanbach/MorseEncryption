@@ -45,11 +45,14 @@ string MorseEncryption::decode(string encoded_message) {
 
 	string code = "";
 
-	for (auto character : encoded_message) {
+	for (unsigned int i = 0; i < encoded_message.length(); i++) {
+		char character = encoded_message.at(i);
 
 		if (character == ' ' or character == '\t') {
 			if (code == "") {
-				message.append(" ");
+				message.append(1, character);
+				//skip the next white space that is used as a encoded message separator
+				i++;
 			} else {
 				Node *node = tree->search_node_by_code(code);
 

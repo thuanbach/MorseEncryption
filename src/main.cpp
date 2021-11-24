@@ -20,7 +20,7 @@ const unsigned int TEST_MODE = 1;
 const unsigned int APP_MODE = 2;
 
 /**  Define a running mode for the application. */
-const unsigned int RUNNING_MODE = TEST_MODE;
+const unsigned int RUNNING_MODE = APP_MODE;
 
 int main() {
 	string file_path = "src/codes/morse_codes.txt";
