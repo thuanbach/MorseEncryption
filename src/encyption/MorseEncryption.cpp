@@ -20,7 +20,7 @@ MorseEncryption::~MorseEncryption() {
 }
 
 string MorseEncryption::encode(string message) {
-	string encoded_message;
+	string encoded_message = "";
 
 	for (unsigned int i = 0; i < message.length(); i++) {
 

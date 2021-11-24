@@ -18,6 +18,7 @@ ConsoleEncryptionApp::ConsoleEncryptionApp() {
 ConsoleEncryptionApp::~ConsoleEncryptionApp() {
 }
 
+
 void ConsoleEncryptionApp::start(const string &file) {
 
 	MorseEncryption encryption(file);
@@ -25,18 +26,25 @@ void ConsoleEncryptionApp::start(const string &file) {
 	string message = "";
 
 	while (true) {
-		cout << "Enter a message. (Enter \"exit\" to exit)> ";
+		cout << "Enter a message. (Enter 0 to exit)> ";
+
 		getline(cin, message);
 
-		if (message == "exit") {
-			break;
+		size_t index = message.find_first_of("\n\r");
+		if (index != string::npos) {
+			message = message.substr(0, index);
 		}
 
+		if (message == "") continue;
+
+		if (message == "0") {
+			cout << "Application shut down";
+			break;
+		}
 
 		string encoded_message = encryption.encode(message);
 		cout << "Coded message" << endl;
 		cout << encoded_message << endl;
-
 
 		string decoded_message = encryption.decode(encoded_message);
 		cout << "Decoded message" << endl;
