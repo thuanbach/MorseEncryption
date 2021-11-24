@@ -23,7 +23,7 @@ const unsigned int APP_MODE = 2;
 const unsigned int RUNNING_MODE = TEST_MODE;
 
 int main() {
-	string file_path = "D:\\ThuanBach\\UR Computer Science\\Eclipse\\CS700Assignment5\\src\\codes\\morse_codes.txt";
+	string file_path = "src/codes/morse_codes.txt";
 
 	if (RUNNING_MODE == APP_MODE) {
 

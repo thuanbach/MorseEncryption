@@ -128,7 +128,7 @@ void test_uppercase_alphabets(MorseEncryption &encrytion) {
 	string encoded_message = encrytion.encode(message);
 	string decoded_message = encrytion.decode(encoded_message);
 
-	cout << "Test alphabet with upper cases: " << verify_result(decoded_message == "abcdefghijklmnopqrstuvwxyz");
+	cout << "Test alphabet with upper cases: " << verify_result(decoded_message == "abcdefghijklmnopqrstuvwxyz") << endl;
 }
 
 
@@ -140,7 +140,7 @@ void test_other_characters(MorseEncryption &encrytion) {
 
 
 
-	cout << "Test alphabet with upper cases: " << verify_result(decoded_message == message);
+	cout << "Test other characters: " << verify_result(decoded_message == message) << endl;
 }
 
 void test_morse_encrytion(string file_path) {
