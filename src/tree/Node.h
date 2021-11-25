@@ -1,8 +1,9 @@
-/*
- * Node.h
+/**
+ * This define a tree's node
  *
- *  Created on: Nov 19, 2021
- *      Author: thuanbachvan
+ * @file Node.h
+ * @date Nov 19, 2021
+ * @author Thuan Bach
  */
 
 #ifndef TREE_NODE_H_

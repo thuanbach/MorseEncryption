@@ -1,8 +1,10 @@
-/*
- * MorseEncryption.cpp
+/**
  *
- *  Created on: Nov 19, 2021
- *      Author: thuanbachvan
+ * @file MorseEncryption.cpp
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
+ * This class is responsible implement encoding and decoding functionality
  */
 
 #include <iostream>
@@ -12,13 +14,29 @@
 
 using namespace std;
 
+/**
+ *  MorseEncryption's Construction
+ */
 MorseEncryption::MorseEncryption(string file_path) {
 	tree = new MorseTree(file_path);
 }
 
+/**
+ *  MorseEncryption's de-construction
+ */
 MorseEncryption::~MorseEncryption() {
 }
 
+/**
+ *
+ *  <p> Implement encoding functionality. <p>
+ *  <p> Receiving a string message and return a encoded string. <p>
+ *  <p> if a character is not a letter, the character is returned as the encoded character. <p>
+ *  <p> There is always a space as a separator between characters in encoded message <p>
+ *
+ *  @param	message	The message needs to be encoded.
+ *  @return	string	A corresponding encoded message.
+ */
 string MorseEncryption::encode(string message) {
 	string encoded_message = "";
 
@@ -40,6 +58,13 @@ string MorseEncryption::encode(string message) {
 	return encoded_message;
 }
 
+/**
+ *  <p> Implement decoding functionality. <p>
+ *  <p> Receiving a encoded string and return the message that is encoded. <p>
+ *
+ *  @param	encoded_message	The encoded message.
+ *  @return	string	A message that used.
+ */
 string MorseEncryption::decode(string encoded_message) {
 	string message;
 
@@ -70,8 +95,9 @@ string MorseEncryption::decode(string encoded_message) {
 
 	}
 
-	if (code != "" ) {
+	if (code != "") {
 		message.append(code);
 	}
+
 	return message;
 }

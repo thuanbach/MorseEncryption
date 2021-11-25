@@ -1,11 +1,12 @@
-//============================================================================
-// Name        : CS700Assignment5.cpp
-// Author      : Thuan Bach
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
 
+/**
+ *
+ * This file contains the main function where the main application gets started.
+ *
+ * @file main.cpp
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ */
 
 #include <iostream>
 #include "ConsoleEncryptionApp.h"
@@ -22,6 +23,11 @@ const unsigned int APP_MODE = 2;
 /**  Define a running mode for the application. */
 const unsigned int RUNNING_MODE = APP_MODE;
 
+/**
+ * This the main function where the main application gets started.
+ *
+ * @return Always 0 if the application terminated correctly
+ */
 int main() {
 	string file_path = "src/codes/morse_codes.txt";
 

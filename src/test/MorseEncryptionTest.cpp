@@ -1,17 +1,22 @@
-/*
- * MorseEncryptionTest.cpp
+/**
+ * Implement unit tests for Morse Code encoding and decoding
  *
- *  Created on: Nov 23, 2021
- *      Author: Thuan Bach
+ * @file MorseEncryptionTest.cpp
+ * @date Nov 23, 2021
+ * @author Thuan Bach
  */
-
-
 
 #include <iostream>
 #include "MorseEncryption.h"
 
 using namespace std;
 
+/**
+ * Verify the result.
+ *
+ * @param result A boolean of the test
+ * @return string A string repenting the test passed or failed.
+ */
 string verify_result(bool result) {
 	if (result) {
 		return "Pass";
@@ -20,7 +25,13 @@ string verify_result(bool result) {
 	return "Fail";
 }
 
-void test_all_alphabets(MorseEncryption &encrytion) {
+/**
+ * Test Morse code encoding/decoding with all alphabets.
+ *
+ * @param encryption MorseEncryption object
+ * @return N/A
+ */
+void test_all_alphabets(MorseEncryption &encryption) {
 
 	string alphabets = "abcdefghijklmnopqrstuvwxyz";
 
@@ -28,8 +39,8 @@ void test_all_alphabets(MorseEncryption &encrytion) {
 		string expected_encoded = "";
 
 		string message = string(1, m);
-		string encoded_message = encrytion.encode(message);
-		string decoded_message = encrytion.decode(encoded_message);
+		string encoded_message = encryption.encode(message);
+		string decoded_message = encryption.decode(encoded_message);
 		switch (m) {
 			case 'e':
 				expected_encoded = ".";
@@ -122,36 +133,57 @@ void test_all_alphabets(MorseEncryption &encrytion) {
 	}
 }
 
-void test_uppercase_alphabets(MorseEncryption &encrytion) {
+/**
+ * Test Morse code encoding/decoding with upper cases.
+ *
+ * @param encryption MorseEncryption object
+ * @return N/A
+ */
+void test_uppercase_alphabets(MorseEncryption &encryption) {
 	string message = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-	string encoded_message = encrytion.encode(message);
-	string decoded_message = encrytion.decode(encoded_message);
+	string encoded_message = encryption.encode(message);
+	string decoded_message = encryption.decode(encoded_message);
 
 	cout << "Test alphabet with upper cases: " << verify_result(decoded_message == "abcdefghijklmnopqrstuvwxyz") << endl;
 }
 
-
-void test_other_characters(MorseEncryption &encrytion) {
+/**
+ * Test Morse code encoding/decoding with other characters.
+ *
+ * @param encryption MorseEncryption object
+ * @return N/A
+ */
+void test_other_characters(MorseEncryption &encryption) {
 	string message = "1234567890+-,!@#$%^&*():";
 
-	string encoded_message = encrytion.encode(message);
-	string decoded_message = encrytion.decode(encoded_message);
+	string encoded_message = encryption.encode(message);
+	string decoded_message = encryption.decode(encoded_message);
 
 	cout << "Test other characters: " << verify_result(decoded_message == message) << endl;
 }
 
-
-void test_space_between_words(MorseEncryption &encrytion) {
+/**
+ * Test Morse code encoding/decoding with spaces between words.
+ * @param encryption MorseEncryption object
+ * @return N/A
+ */
+void test_space_between_words(MorseEncryption &encryption) {
 	string message = "	h	w	a  q";
 
-	string encoded_message = encrytion.encode(message);
-	string decoded_message = encrytion.decode(encoded_message);
+	string encoded_message = encryption.encode(message);
+	string decoded_message = encryption.decode(encoded_message);
 
 	cout << "Test space between characters: " << verify_result(decoded_message == message) << endl;
 }
 
-void test_morse_encrytion(string file_path) {
+/**
+ * Implement unit tests for Morse codes' encoding and decoding
+ *
+ * @param file_path The file path where Morse codes are defined.
+ * @return N/A
+ */
+void test_morse_encryption(string file_path) {
 	MorseEncryption encryption(file_path);
 
 	test_all_alphabets(encryption);

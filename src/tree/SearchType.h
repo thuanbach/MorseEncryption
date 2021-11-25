@@ -1,8 +1,9 @@
-/*
- * SearchType.h
+/**
+ * This defines a SearchType enum.
  *
- *  Created on: Nov 20, 2021
- *      Author: thuanbachvan
+ * @file SearchType.h
+ * @date Nov 20, 2021
+ * @author Thuan Bach
  */
 
 #ifndef TREE_SEARCHTYPE_H_
