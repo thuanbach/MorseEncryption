@@ -81,10 +81,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a03ba2ea63d988323cfdcc6a59d3b3bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef752aa6e2e3f5748e0a9b5989bb14dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_morse_tree.html#aef752aa6e2e3f5748e0a9b5989bb14dd">search_node_by_code</a> (const string &amp;code)</td></tr>
 <tr class="separator:aef752aa6e2e3f5748e0a9b5989bb14dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76352f3eb9dd58add81c9b8a3df48fef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_morse_tree.html#a76352f3eb9dd58add81c9b8a3df48fef">traverse</a> ()</td></tr>
-<tr class="separator:a76352f3eb9dd58add81c9b8a3df48fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34350d0be2297b9d8f41f3cf948617ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_morse_tree.html#a34350d0be2297b9d8f41f3cf948617ec">traverse_with_node</a> (<a class="el" href="struct_node.html">Node</a> *node)</td></tr>
-<tr class="separator:a34350d0be2297b9d8f41f3cf948617ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5561b617589bd1e3cb4bb00b994043b4" name="a5561b617589bd1e3cb4bb00b994043b4"></a>
@@ -101,7 +97,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Default constructor </p>
+<dl class="section author"><dt>Author</dt><dd>Thuan Bach </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Nov 19, 2021</dd></dl>
+<p>Default constructor </p>
 
 </div>
 </div>
@@ -120,13 +118,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Construct <a class="el" href="class_morse_tree.html">MorseTree</a> from a file.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">file</td><td>A file path where letters and the corresponding code is defined.</td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section author"><dt>Author</dt><dd>Thuan Bach </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Nov 19, 2021</dd></dl>
 <p>Default constructor with file path where Morse's codes are defined. Read file where each line contain a letter and its corresponding encoded string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -159,8 +152,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >De-Constructor</p>
-<p >Default de-constructor </p>
+<dl class="section author"><dt>Author</dt><dd>Thuan Bach </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Nov 19, 2021</dd></dl>
+<p>De-Constructor </p>
 
 </div>
 </div>
@@ -180,7 +174,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Search a <a class="el" href="struct_node.html">Node</a> by a code</p>
+<dl class="section author"><dt>Author</dt><dd>Thuan Bach </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Nov 19, 2021</dd></dl>
+<p>Search a <a class="el" href="struct_node.html">Node</a> by a code</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">code</td><td>A code needs to be searched </td></tr>
@@ -206,7 +202,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Search a node by letter</p>
+<dl class="section author"><dt>Author</dt><dd>Thuan Bach </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Nov 19, 2021</dd></dl>
+<p>Search a node by letter</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">letter</td><td>A letter needs to be searched. </td></tr>
@@ -214,51 +212,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_node.html">Node</a> A node containing the letter. </dd></dl>
-
-</div>
-</div>
-<a id="a76352f3eb9dd58add81c9b8a3df48fef" name="a76352f3eb9dd58add81c9b8a3df48fef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76352f3eb9dd58add81c9b8a3df48fef">&#9670;&nbsp;</a></span>traverse()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MorseTree::traverse </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Traverse the tree. It supports for verifying the tree is correct or not.</p>
-<dl class="section return"><dt>Returns</dt><dd>N/A </dd></dl>
-
-</div>
-</div>
-<a id="a34350d0be2297b9d8f41f3cf948617ec" name="a34350d0be2297b9d8f41f3cf948617ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34350d0be2297b9d8f41f3cf948617ec">&#9670;&nbsp;</a></span>traverse_with_node()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MorseTree::traverse_with_node </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_node.html">Node</a> *&#160;</td>
-          <td class="paramname"><em>node</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Traverse the tree from a node. It will call recursively its child nodes</p>
-<p >Traverse the tree from a node. It will call recursively its child nodes.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname"><a class="el" href="struct_node.html">Node</a></td><td>The current node is being traversed. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

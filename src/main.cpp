@@ -24,6 +24,9 @@ const unsigned int APP_MODE = 2;
 const unsigned int RUNNING_MODE = APP_MODE;
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  * This the main function where the main application gets started.
  *
  * @return Always 0 if the application terminated correctly

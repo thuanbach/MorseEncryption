@@ -14,6 +14,9 @@
 using namespace std;
 
 /**
+ * @author Thuan Bach
+ * @date Nov 23, 2021
+ *
  * Implement unit test for Morse codes' encoding and decoding
  *
  * @param file_path The file path where Morse codes are defined.

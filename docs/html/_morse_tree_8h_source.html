@@ -83,47 +83,46 @@ $(function() {
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_morse_tree.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="class_morse_tree.html">MorseTree</a> {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_function" href="class_morse_tree.html#a5561b617589bd1e3cb4bb00b994043b4">MorseTree</a>();</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="class_morse_tree.html#a5561b617589bd1e3cb4bb00b994043b4">MorseTree</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;file);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_morse_tree.html#a258c713f160ce7aa889327a1ecb24217">~MorseTree</a>();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_struct" href="struct_node.html">Node</a>* <a class="code hl_function" href="class_morse_tree.html#a03ba2ea63d988323cfdcc6a59d3b3bc7">search_node_by_letter</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;letter);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_struct" href="struct_node.html">Node</a>* <a class="code hl_function" href="class_morse_tree.html#aef752aa6e2e3f5748e0a9b5989bb14dd">search_node_by_code</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;code);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_morse_tree.html#a76352f3eb9dd58add81c9b8a3df48fef">traverse</a>();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_morse_tree.html#a34350d0be2297b9d8f41f3cf948617ec">traverse_with_node</a>(<a class="code hl_struct" href="struct_node.html">Node</a>* node);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">bool</span> match(<a class="code hl_struct" href="struct_node.html">Node</a> *node, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;text, <span class="keyword">const</span> SearchType type);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <a class="code hl_struct" href="struct_node.html">Node</a>* search(<a class="code hl_struct" href="struct_node.html">Node</a>* node, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;text, <span class="keyword">const</span> SearchType type);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">void</span> init_morse_tree_from_file(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;file);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_struct" href="struct_node.html">Node</a>* parse_a_node_from_raw_text_line(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;line);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordtype">void</span> insert_node(<a class="code hl_struct" href="struct_node.html">Node</a>* node);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">void</span> insert_node_recursive(<a class="code hl_struct" href="struct_node.html">Node</a>* parent_node, <a class="code hl_struct" href="struct_node.html">Node</a>* node, <span class="keyword">const</span> <span class="keywordtype">int</span> level);</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <a class="code hl_struct" href="struct_node.html">Node</a>* root;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>};</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="class_morse_tree.html#a5561b617589bd1e3cb4bb00b994043b4">MorseTree</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_function" href="class_morse_tree.html#a5561b617589bd1e3cb4bb00b994043b4">MorseTree</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;file);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_morse_tree.html#a258c713f160ce7aa889327a1ecb24217">~MorseTree</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_struct" href="struct_node.html">Node</a>* <a class="code hl_function" href="class_morse_tree.html#a03ba2ea63d988323cfdcc6a59d3b3bc7">search_node_by_letter</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;letter);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_struct" href="struct_node.html">Node</a>* <a class="code hl_function" href="class_morse_tree.html#aef752aa6e2e3f5748e0a9b5989bb14dd">search_node_by_code</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;code);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">void</span> traverse();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordtype">void</span> traverse_with_node(<a class="code hl_struct" href="struct_node.html">Node</a>* node);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">bool</span> match(<a class="code hl_struct" href="struct_node.html">Node</a> *node, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;text, <span class="keyword">const</span> SearchType type);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <a class="code hl_struct" href="struct_node.html">Node</a>* search(<a class="code hl_struct" href="struct_node.html">Node</a>* node, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;text, <span class="keyword">const</span> SearchType type);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">void</span> init_morse_tree_from_file(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;file);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <a class="code hl_struct" href="struct_node.html">Node</a>* parse_a_node_from_raw_text_line(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;line);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="preprocessor">#endif </span><span class="comment">/* TREE_MORSETREE_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordtype">void</span> insert_node(<a class="code hl_struct" href="struct_node.html">Node</a>* node);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordtype">void</span> insert_node_recursive(<a class="code hl_struct" href="struct_node.html">Node</a>* parent_node, <a class="code hl_struct" href="struct_node.html">Node</a>* node, <span class="keyword">const</span> <span class="keywordtype">int</span> level);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_struct" href="struct_node.html">Node</a>* root;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>};</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor">#endif </span><span class="comment">/* TREE_MORSETREE_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="a_node_8h_html"><div class="ttname"><a href="_node_8h.html">Node.h</a></div></div>
 <div class="ttc" id="a_search_type_8h_html"><div class="ttname"><a href="_search_type_8h.html">SearchType.h</a></div></div>
 <div class="ttc" id="aclass_morse_tree_html"><div class="ttname"><a href="class_morse_tree.html">MorseTree</a></div><div class="ttdef"><b>Definition:</b> MorseTree.h:19</div></div>
-<div class="ttc" id="aclass_morse_tree_html_a03ba2ea63d988323cfdcc6a59d3b3bc7"><div class="ttname"><a href="class_morse_tree.html#a03ba2ea63d988323cfdcc6a59d3b3bc7">MorseTree::search_node_by_letter</a></div><div class="ttdeci">Node * search_node_by_letter(const string &amp;letter)</div><div class="ttdef"><b>Definition:</b> MorseTree.cpp:118</div></div>
-<div class="ttc" id="aclass_morse_tree_html_a258c713f160ce7aa889327a1ecb24217"><div class="ttname"><a href="class_morse_tree.html#a258c713f160ce7aa889327a1ecb24217">MorseTree::~MorseTree</a></div><div class="ttdeci">virtual ~MorseTree()</div><div class="ttdef"><b>Definition:</b> MorseTree.cpp:24</div></div>
-<div class="ttc" id="aclass_morse_tree_html_a34350d0be2297b9d8f41f3cf948617ec"><div class="ttname"><a href="class_morse_tree.html#a34350d0be2297b9d8f41f3cf948617ec">MorseTree::traverse_with_node</a></div><div class="ttdeci">void traverse_with_node(Node *node)</div><div class="ttdef"><b>Definition:</b> MorseTree.cpp:198</div></div>
-<div class="ttc" id="aclass_morse_tree_html_a5561b617589bd1e3cb4bb00b994043b4"><div class="ttname"><a href="class_morse_tree.html#a5561b617589bd1e3cb4bb00b994043b4">MorseTree::MorseTree</a></div><div class="ttdeci">MorseTree()</div><div class="ttdef"><b>Definition:</b> MorseTree.cpp:17</div></div>
-<div class="ttc" id="aclass_morse_tree_html_a76352f3eb9dd58add81c9b8a3df48fef"><div class="ttname"><a href="class_morse_tree.html#a76352f3eb9dd58add81c9b8a3df48fef">MorseTree::traverse</a></div><div class="ttdeci">void traverse()</div><div class="ttdef"><b>Definition:</b> MorseTree.cpp:188</div></div>
-<div class="ttc" id="aclass_morse_tree_html_aef752aa6e2e3f5748e0a9b5989bb14dd"><div class="ttname"><a href="class_morse_tree.html#aef752aa6e2e3f5748e0a9b5989bb14dd">MorseTree::search_node_by_code</a></div><div class="ttdeci">Node * search_node_by_code(const string &amp;code)</div><div class="ttdef"><b>Definition:</b> MorseTree.cpp:135</div></div>
+<div class="ttc" id="aclass_morse_tree_html_a03ba2ea63d988323cfdcc6a59d3b3bc7"><div class="ttname"><a href="class_morse_tree.html#a03ba2ea63d988323cfdcc6a59d3b3bc7">MorseTree::search_node_by_letter</a></div><div class="ttdeci">Node * search_node_by_letter(const string &amp;letter)</div><div class="ttdef"><b>Definition:</b> MorseTree.cpp:139</div></div>
+<div class="ttc" id="aclass_morse_tree_html_a258c713f160ce7aa889327a1ecb24217"><div class="ttname"><a href="class_morse_tree.html#a258c713f160ce7aa889327a1ecb24217">MorseTree::~MorseTree</a></div><div class="ttdeci">virtual ~MorseTree()</div><div class="ttdef"><b>Definition:</b> MorseTree.cpp:30</div></div>
+<div class="ttc" id="aclass_morse_tree_html_a5561b617589bd1e3cb4bb00b994043b4"><div class="ttname"><a href="class_morse_tree.html#a5561b617589bd1e3cb4bb00b994043b4">MorseTree::MorseTree</a></div><div class="ttdeci">MorseTree()</div><div class="ttdef"><b>Definition:</b> MorseTree.cpp:20</div></div>
+<div class="ttc" id="aclass_morse_tree_html_aef752aa6e2e3f5748e0a9b5989bb14dd"><div class="ttname"><a href="class_morse_tree.html#aef752aa6e2e3f5748e0a9b5989bb14dd">MorseTree::search_node_by_code</a></div><div class="ttdeci">Node * search_node_by_code(const string &amp;code)</div><div class="ttdef"><b>Definition:</b> MorseTree.cpp:159</div></div>
 <div class="ttc" id="astruct_node_html"><div class="ttname"><a href="struct_node.html">Node</a></div><div class="ttdef"><b>Definition:</b> Node.h:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

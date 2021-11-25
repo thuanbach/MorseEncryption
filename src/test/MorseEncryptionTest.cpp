@@ -12,6 +12,9 @@
 using namespace std;
 
 /**
+ * @author Thuan Bach
+ * @date Nov 23, 2021
+ *
  * Verify the result.
  *
  * @param result A boolean of the test
@@ -26,6 +29,10 @@ string verify_result(bool result) {
 }
 
 /**
+ *
+ * @author Thuan Bach
+ * @date Nov 23, 2021
+ *
  * Test Morse code encoding/decoding with all alphabets.
  *
  * @param encryption MorseEncryption object
@@ -134,6 +141,10 @@ void test_all_alphabets(MorseEncryption &encryption) {
 }
 
 /**
+ *
+ * @author Thuan Bach
+ * @date Nov 23, 2021
+ *
  * Test Morse code encoding/decoding with upper cases.
  *
  * @param encryption MorseEncryption object
@@ -149,6 +160,9 @@ void test_uppercase_alphabets(MorseEncryption &encryption) {
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 23, 2021
+ *
  * Test Morse code encoding/decoding with other characters.
  *
  * @param encryption MorseEncryption object
@@ -164,6 +178,9 @@ void test_other_characters(MorseEncryption &encryption) {
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 23, 2021
+ *
  * Test Morse code encoding/decoding with spaces between words.
  * @param encryption MorseEncryption object
  * @return N/A
@@ -178,6 +195,9 @@ void test_space_between_words(MorseEncryption &encryption) {
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 23, 2021
+ *
  * Implement unit tests for Morse codes' encoding and decoding
  *
  * @param file_path The file path where Morse codes are defined.

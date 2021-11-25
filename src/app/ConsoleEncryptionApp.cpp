@@ -4,7 +4,7 @@
  *
  * @file ConsoleEncryptionApp.cpp
  * @author 	Thuan Bach
- * @date	 Nov 20, 2021
+ * @date	Nov 20, 2021
  *
  */
 
@@ -16,18 +16,27 @@ using namespace std;
 #include "MorseEncryption.h"
 
 /**
+ * @author 	 Thuan Bach
+ * @date	 Nov 20, 2021
+ *
  * ConsoleEncryptionApp's constructor
  */
 ConsoleEncryptionApp::ConsoleEncryptionApp() {
 }
 
 /**
+ *  @author  Thuan Bach
+ *  @date	 Nov 20, 2021
+ *
  *  ConsoleEncryptionApp's de-constructor
  */
 ConsoleEncryptionApp::~ConsoleEncryptionApp() {
 }
 
 /**
+ *  @author  Thuan Bach
+ *  @date	 Nov 20, 2021
+ *
  *  Start the console encryption application where user can use Morse's encoding and decoding functionality.
  *
  *  @param	file	The path to the file that Morse's encodes

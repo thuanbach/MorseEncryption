@@ -15,19 +15,29 @@
 using namespace std;
 
 /**
- *  MorseEncryption's Construction
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
+ *  MorseEncryption's Construction with initiating MorseTree whose codes are loaded from a file
+ *
+ *  @param	file_path The path to the file where Morse's codes are defined.
  */
 MorseEncryption::MorseEncryption(string file_path) {
 	tree = new MorseTree(file_path);
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  *  MorseEncryption's de-construction
  */
 MorseEncryption::~MorseEncryption() {
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
  *
  *  <p> Implement encoding functionality. <p>
  *  <p> Receiving a string message and return a encoded string. <p>
@@ -59,6 +69,9 @@ string MorseEncryption::encode(string message) {
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  *  <p> Implement decoding functionality. <p>
  *  <p> Receiving a encoded string and return the message that is encoded. <p>
  *

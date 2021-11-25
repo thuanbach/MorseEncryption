@@ -20,12 +20,18 @@ class MorseTree {
 
 public:
 	/**
+	 * @author Thuan Bach
+	 * @date Nov 19, 2021
+	 *
 	 * Default constructor
 	 */
 	MorseTree();
 
 
 	/**
+	 * @author Thuan Bach
+	 * @date Nov 19, 2021
+	 *
 	 * Default constructor with file path where Morse's codes are defined.
 	 * Read file where each line contain a letter and its corresponding encoded string.
 	 *
@@ -34,11 +40,17 @@ public:
 	MorseTree(const string &file);
 
 	/**
+	 * @author Thuan Bach
+	 * @date Nov 19, 2021
+	 *
 	 * De-Constructor
 	 */
 	virtual ~MorseTree();
 
 	/**
+	 * @author Thuan Bach
+	 * @date Nov 19, 2021
+	 *
 	 * Search a node by letter
 	 *
 	 * @param letter A letter needs to be searched.
@@ -47,6 +59,9 @@ public:
 	Node* search_node_by_letter(const string &letter);
 
 	/**
+	 * @author Thuan Bach
+	 * @date Nov 19, 2021
+	 *
 	 * Search a Node by a code
 	 *
 	 * @param code	A code needs to be searched
@@ -54,7 +69,11 @@ public:
 	 */
 	Node* search_node_by_code(const string &code);
 
+private:
 	/**
+	 * @author Thuan Bach
+	 * @date Nov 19, 2021
+	 *
 	 * Traverse the tree. It supports for verifying the tree is correct or not.
 	 *
 	 * @return N/A
@@ -62,13 +81,15 @@ public:
 	void traverse();
 
 	/**
+	 * @author Thuan Bach
+	 * @date Nov 19, 2021
+	 *
 	 * Traverse the tree from a node. It will call recursively its child nodes.
 	 *
 	 * @param Node The current node is being traversed.
 	 */
 	void traverse_with_node(Node* node);
 
-private:
 	/**
 	 * Check if the node matches with text and SearchType condition.
 	 *

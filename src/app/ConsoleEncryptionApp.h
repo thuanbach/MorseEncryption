@@ -4,7 +4,7 @@
  *
  * @file ConsoleEncryptionApp.h
  * @author 	Thuan Bach
- * @date	 Nov 20, 2021
+ * @date	Nov 20, 2021
  *
  */
 #ifndef APP_CONSOLEENCRYPTIONAPP_H_
@@ -19,16 +19,25 @@ class ConsoleEncryptionApp {
 
 public:
 	/**
+	 * @author 	Thuan Bach
+	 * @date	Nov 20, 2021
+	 *
 	 * ConsoleEncryptionApp's constructor
 	 */
 	ConsoleEncryptionApp();
 
 	/**
+	 *  @author  Thuan Bach
+	 *  @date	 Nov 20, 2021
+	 *
 	 *  ConsoleEncryptionApp's de-constructor
 	 */
 	virtual ~ConsoleEncryptionApp();
 
 	/**
+	 *  @author  Thuan Bach
+	 *  @date	 Nov 20, 2021
+	 *
 	 *  Start the console encryption application where user can use Morse's encoding and decoding functionality.
 	 *
 	 *  @param	file	The path to the file that Morse's encodes

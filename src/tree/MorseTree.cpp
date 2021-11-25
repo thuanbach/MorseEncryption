@@ -12,6 +12,9 @@
 #include "SearchType.h"
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  * Default constructor
  */
 MorseTree::MorseTree() {
@@ -19,13 +22,19 @@ MorseTree::MorseTree() {
 }
 
 /**
- * Default de-constructor
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
+ * De-Constructor
  */
 MorseTree::~MorseTree() {
 
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  * Default constructor with file path where Morse's codes are defined.
  * Read file where each line contain a letter and its corresponding encoded string.
  *
@@ -39,6 +48,9 @@ MorseTree::MorseTree(const string &file_path) {
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  * Parse a node from raw text line
  *
  * @param line A line of the file containing letters and codes
@@ -59,6 +71,9 @@ Node* MorseTree::parse_a_node_from_raw_text_line(const string &line) {
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  * Check if the node matches with text and SearchType condition.
  *
  * @param node A current node
@@ -81,6 +96,9 @@ bool MorseTree::match(Node *node, const string &text, const SearchType type) {
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  * Search a node by text and a SearchType
  *
  * @param node	A current node that is being checked
@@ -110,6 +128,9 @@ Node* MorseTree::search(Node *node, const string &text, const SearchType type) {
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  * Search a node by letter
  *
  * @param letter A letter needs to be searched.
@@ -127,6 +148,9 @@ Node* MorseTree::search_node_by_letter(const string &letter) {
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  * Search a Node by a code
  *
  * @param code	A code needs to be searched
@@ -144,6 +168,9 @@ Node* MorseTree::search_node_by_code(const string &code) {
 }
 
 /**
+  *@author Thuan Bach
+ * @date Nov 19, 2021
+ *
  * Insert a node into the tree recursively.
  *
  * @param parent_node
@@ -171,6 +198,9 @@ void MorseTree::insert_node_recursive(Node *parent, Node *node,
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  * Insert a node into the tree
  *
  * @param Node A node needs to be inserted.
@@ -181,6 +211,9 @@ void MorseTree::insert_node(Node *node) {
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  * Traverse the tree. It supports for verifying the tree is correct or not.
  *
  * @return N/A
@@ -191,6 +224,9 @@ void MorseTree::traverse() {
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  * Traverse the tree from a node. It will call recursively its child nodes.
  *
  * @param Node The current node is being traversed.
@@ -203,6 +239,9 @@ void MorseTree::traverse_with_node(Node *node) {
 }
 
 /**
+ * @author Thuan Bach
+ * @date Nov 19, 2021
+ *
  * <p> Initiate the MorseTree from file. <p>
  * <p> Read file where each line contains a letter and its corresponding encoded string. <p>
  * <p> The order of letters's in the file is important because it will be its level in the tree. <p>

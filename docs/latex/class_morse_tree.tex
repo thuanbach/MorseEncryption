@@ -12,10 +12,6 @@ virtual \mbox{\hyperlink{class_morse_tree_a258c713f160ce7aa889327a1ecb24217}{$\s
 \mbox{\hyperlink{struct_node}{Node}} $\ast$ \mbox{\hyperlink{class_morse_tree_a03ba2ea63d988323cfdcc6a59d3b3bc7}{search\+\_\+node\+\_\+by\+\_\+letter}} (const string \&letter)
 \item 
 \mbox{\hyperlink{struct_node}{Node}} $\ast$ \mbox{\hyperlink{class_morse_tree_aef752aa6e2e3f5748e0a9b5989bb14dd}{search\+\_\+node\+\_\+by\+\_\+code}} (const string \&code)
-\item 
-void \mbox{\hyperlink{class_morse_tree_a76352f3eb9dd58add81c9b8a3df48fef}{traverse}} ()
-\item 
-void \mbox{\hyperlink{class_morse_tree_a34350d0be2297b9d8f41f3cf948617ec}{traverse\+\_\+with\+\_\+node}} (\mbox{\hyperlink{struct_node}{Node}} $\ast$node)
 \end{DoxyCompactItemize}
 
 
@@ -26,19 +22,24 @@ void \mbox{\hyperlink{class_morse_tree_a34350d0be2297b9d8f41f3cf948617ec}{traver
 \doxysubsubsection{\texorpdfstring{MorseTree()}{MorseTree()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Morse\+Tree\+::\+Morse\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
 Default constructor \mbox{\Hypertarget{class_morse_tree_a426d61303560245b80b1cbccb9e0f460}\label{class_morse_tree_a426d61303560245b80b1cbccb9e0f460}} 
 \index{MorseTree@{MorseTree}!MorseTree@{MorseTree}}
 \index{MorseTree@{MorseTree}!MorseTree@{MorseTree}}
 \doxysubsubsection{\texorpdfstring{MorseTree()}{MorseTree()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Morse\+Tree\+::\+Morse\+Tree (\begin{DoxyParamCaption}\item[{const string \&}]{file\+\_\+path }\end{DoxyParamCaption})}
 
-Construct \mbox{\hyperlink{class_morse_tree}{Morse\+Tree}} from a file.
-
-
-\begin{DoxyParams}{Parameters}
-{\em file} & A file path where letters and the corresponding code is defined.\\
-\hline
-\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
 Default constructor with file path where Morse\textquotesingle{}s codes are defined. Read file where each line contain a letter and its corresponding encoded string.
 
 
@@ -52,9 +53,13 @@ Default constructor with file path where Morse\textquotesingle{}s codes are defi
 \doxysubsubsection{\texorpdfstring{$\sim$MorseTree()}{~MorseTree()}}
 {\footnotesize\ttfamily Morse\+Tree\+::$\sim$\+Morse\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-De-\/\+Constructor
-
-Default de-\/constructor 
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
+De-\/\+Constructor 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_morse_tree_aef752aa6e2e3f5748e0a9b5989bb14dd}\label{class_morse_tree_aef752aa6e2e3f5748e0a9b5989bb14dd}} 
@@ -63,6 +68,12 @@ Default de-\/constructor
 \doxysubsubsection{\texorpdfstring{search\_node\_by\_code()}{search\_node\_by\_code()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} $\ast$ Morse\+Tree\+::search\+\_\+node\+\_\+by\+\_\+code (\begin{DoxyParamCaption}\item[{const string \&}]{code }\end{DoxyParamCaption})}
 
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
 Search a \mbox{\hyperlink{struct_node}{Node}} by a code
 
 
@@ -79,6 +90,12 @@ Search a \mbox{\hyperlink{struct_node}{Node}} by a code
 \doxysubsubsection{\texorpdfstring{search\_node\_by\_letter()}{search\_node\_by\_letter()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} $\ast$ Morse\+Tree\+::search\+\_\+node\+\_\+by\+\_\+letter (\begin{DoxyParamCaption}\item[{const string \&}]{letter }\end{DoxyParamCaption})}
 
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
 Search a node by letter
 
 
@@ -89,32 +106,6 @@ Search a node by letter
 \begin{DoxyReturn}{Returns}
 \mbox{\hyperlink{struct_node}{Node}} A node containing the letter. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_morse_tree_a76352f3eb9dd58add81c9b8a3df48fef}\label{class_morse_tree_a76352f3eb9dd58add81c9b8a3df48fef}} 
-\index{MorseTree@{MorseTree}!traverse@{traverse}}
-\index{traverse@{traverse}!MorseTree@{MorseTree}}
-\doxysubsubsection{\texorpdfstring{traverse()}{traverse()}}
-{\footnotesize\ttfamily void Morse\+Tree\+::traverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Traverse the tree. It supports for verifying the tree is correct or not.
-
-\begin{DoxyReturn}{Returns}
-N/A 
-\end{DoxyReturn}
-\mbox{\Hypertarget{class_morse_tree_a34350d0be2297b9d8f41f3cf948617ec}\label{class_morse_tree_a34350d0be2297b9d8f41f3cf948617ec}} 
-\index{MorseTree@{MorseTree}!traverse\_with\_node@{traverse\_with\_node}}
-\index{traverse\_with\_node@{traverse\_with\_node}!MorseTree@{MorseTree}}
-\doxysubsubsection{\texorpdfstring{traverse\_with\_node()}{traverse\_with\_node()}}
-{\footnotesize\ttfamily void Morse\+Tree\+::traverse\+\_\+with\+\_\+node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} $\ast$}]{node }\end{DoxyParamCaption})}
-
-Traverse the tree from a node. It will call recursively its child nodes
-
-Traverse the tree from a node. It will call recursively its child nodes.
-
-
-\begin{DoxyParams}{Parameters}
-{\em \mbox{\hyperlink{struct_node}{Node}}} & The current node is being traversed. \\
-\hline
-\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
