@@ -1,0 +1,126 @@
+\hypertarget{class_morse_encryption}{}\doxysection{Morse\+Encryption Class Reference}
+\label{class_morse_encryption}\index{MorseEncryption@{MorseEncryption}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_morse_encryption_ad4d85712c5923412b7c8258ee85a00ee}{Morse\+Encryption}} ()
+\item 
+\mbox{\hyperlink{class_morse_encryption_a625c3a2d5bb39f7b6da4ac7c87a7e00f}{Morse\+Encryption}} (string file\+\_\+path)
+\item 
+virtual \mbox{\hyperlink{class_morse_encryption_ada3c6337522029b7c7d4dc8aa7302776}{$\sim$\+Morse\+Encryption}} ()
+\item 
+string \mbox{\hyperlink{class_morse_encryption_a478563735b195272162d5d8cba0e68de}{encode}} (string message)
+\item 
+string \mbox{\hyperlink{class_morse_encryption_a5c2c024c76ed7d8e5f066697a78d67c5}{decode}} (string encoded\+\_\+message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_morse_encryption_ad4d85712c5923412b7c8258ee85a00ee}\label{class_morse_encryption_ad4d85712c5923412b7c8258ee85a00ee}} 
+\index{MorseEncryption@{MorseEncryption}!MorseEncryption@{MorseEncryption}}
+\index{MorseEncryption@{MorseEncryption}!MorseEncryption@{MorseEncryption}}
+\doxysubsubsection{\texorpdfstring{MorseEncryption()}{MorseEncryption()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Morse\+Encryption\+::\+Morse\+Encryption (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
+\mbox{\hyperlink{class_morse_encryption}{Morse\+Encryption}}\textquotesingle{}s Construction \mbox{\Hypertarget{class_morse_encryption_a625c3a2d5bb39f7b6da4ac7c87a7e00f}\label{class_morse_encryption_a625c3a2d5bb39f7b6da4ac7c87a7e00f}} 
+\index{MorseEncryption@{MorseEncryption}!MorseEncryption@{MorseEncryption}}
+\index{MorseEncryption@{MorseEncryption}!MorseEncryption@{MorseEncryption}}
+\doxysubsubsection{\texorpdfstring{MorseEncryption()}{MorseEncryption()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Morse\+Encryption\+::\+Morse\+Encryption (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
+\mbox{\hyperlink{class_morse_encryption}{Morse\+Encryption}}\textquotesingle{}s Construction with initiating \mbox{\hyperlink{class_morse_tree}{Morse\+Tree}} whose codes are loaded from a file
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & The path to the file where Morse\textquotesingle{}s codes are defined. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_morse_encryption_ada3c6337522029b7c7d4dc8aa7302776}\label{class_morse_encryption_ada3c6337522029b7c7d4dc8aa7302776}} 
+\index{MorseEncryption@{MorseEncryption}!````~MorseEncryption@{$\sim$MorseEncryption}}
+\index{````~MorseEncryption@{$\sim$MorseEncryption}!MorseEncryption@{MorseEncryption}}
+\doxysubsubsection{\texorpdfstring{$\sim$MorseEncryption()}{~MorseEncryption()}}
+{\footnotesize\ttfamily Morse\+Encryption\+::$\sim$\+Morse\+Encryption (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
+\mbox{\hyperlink{class_morse_encryption}{Morse\+Encryption}}\textquotesingle{}s de-\/construction 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_morse_encryption_a5c2c024c76ed7d8e5f066697a78d67c5}\label{class_morse_encryption_a5c2c024c76ed7d8e5f066697a78d67c5}} 
+\index{MorseEncryption@{MorseEncryption}!decode@{decode}}
+\index{decode@{decode}!MorseEncryption@{MorseEncryption}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily string Morse\+Encryption\+::decode (\begin{DoxyParamCaption}\item[{string}]{encoded\+\_\+message }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
+
+
+Implement decoding functionality. 
+
+Receiving a encoded string and return the message that is encoded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em encoded\+\_\+message} & The encoded message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string A message that used. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_morse_encryption_a478563735b195272162d5d8cba0e68de}\label{class_morse_encryption_a478563735b195272162d5d8cba0e68de}} 
+\index{MorseEncryption@{MorseEncryption}!encode@{encode}}
+\index{encode@{encode}!MorseEncryption@{MorseEncryption}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily string Morse\+Encryption\+::encode (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
+
+
+Implement encoding functionality. 
+
+Receiving a string message and return a encoded string. 
+
+if a character is not a letter, the character is returned as the encoded character. 
+
+There is always a space as a separator between characters in encoded message 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message needs to be encoded. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string A corresponding encoded message. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/encyption/\mbox{\hyperlink{_morse_encryption_8h}{Morse\+Encryption.\+h}}\item 
+src/encyption/\mbox{\hyperlink{_morse_encryption_8cpp}{Morse\+Encryption.\+cpp}}\end{DoxyCompactItemize}

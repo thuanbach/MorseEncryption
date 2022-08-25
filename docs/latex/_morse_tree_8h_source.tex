@@ -1,0 +1,53 @@
+\hypertarget{_morse_tree_8h_source}{}\doxysection{Morse\+Tree.\+h}
+\label{_morse_tree_8h_source}\index{src/tree/MorseTree.h@{src/tree/MorseTree.h}}
+\mbox{\hyperlink{_morse_tree_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef TREE\_MORSETREE\_H\_}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define TREE\_MORSETREE\_H\_}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_node_8h}{Node.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_search_type_8h}{SearchType.h}}"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_morse_tree}{MorseTree}} \{}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_morse_tree_a5561b617589bd1e3cb4bb00b994043b4}{MorseTree}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{40     \mbox{\hyperlink{class_morse_tree_a5561b617589bd1e3cb4bb00b994043b4}{MorseTree}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&file);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{48     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_morse_tree_a258c713f160ce7aa889327a1ecb24217}{\string~MorseTree}}();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{59     \mbox{\hyperlink{struct_node}{Node}}* \mbox{\hyperlink{class_morse_tree_a03ba2ea63d988323cfdcc6a59d3b3bc7}{search\_node\_by\_letter}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&letter);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{70     \mbox{\hyperlink{struct_node}{Node}}* \mbox{\hyperlink{class_morse_tree_aef752aa6e2e3f5748e0a9b5989bb14dd}{search\_node\_by\_code}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&code);}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72 \textcolor{keyword}{private}:}
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} traverse();}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{91     \textcolor{keywordtype}{void} traverse\_with\_node(\mbox{\hyperlink{struct_node}{Node}}* node);}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{100     \textcolor{keywordtype}{bool} match(\mbox{\hyperlink{struct_node}{Node}} *node, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&text, \textcolor{keyword}{const} SearchType type);}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{110     \mbox{\hyperlink{struct_node}{Node}}* search(\mbox{\hyperlink{struct_node}{Node}}* node, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&text, \textcolor{keyword}{const} SearchType type);}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112 }
+\DoxyCodeLine{120     \textcolor{keywordtype}{void} init\_morse\_tree\_from\_file(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&file);}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{128     \mbox{\hyperlink{struct_node}{Node}}* parse\_a\_node\_from\_raw\_text\_line(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&line);}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{136     \textcolor{keywordtype}{void} insert\_node(\mbox{\hyperlink{struct_node}{Node}}* node);}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{146     \textcolor{keywordtype}{void} insert\_node\_recursive(\mbox{\hyperlink{struct_node}{Node}}* parent\_node, \mbox{\hyperlink{struct_node}{Node}}* node, \textcolor{keyword}{const} \textcolor{keywordtype}{int} level);}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{151     \mbox{\hyperlink{struct_node}{Node}}* root;}
+\DoxyCodeLine{152 \};}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* TREE\_MORSETREE\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

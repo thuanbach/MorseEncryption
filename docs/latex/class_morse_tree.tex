@@ -1,0 +1,114 @@
+\hypertarget{class_morse_tree}{}\doxysection{Morse\+Tree Class Reference}
+\label{class_morse_tree}\index{MorseTree@{MorseTree}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_morse_tree_a5561b617589bd1e3cb4bb00b994043b4}{Morse\+Tree}} ()
+\item 
+\mbox{\hyperlink{class_morse_tree_a426d61303560245b80b1cbccb9e0f460}{Morse\+Tree}} (const string \&file)
+\item 
+virtual \mbox{\hyperlink{class_morse_tree_a258c713f160ce7aa889327a1ecb24217}{$\sim$\+Morse\+Tree}} ()
+\item 
+\mbox{\hyperlink{struct_node}{Node}} $\ast$ \mbox{\hyperlink{class_morse_tree_a03ba2ea63d988323cfdcc6a59d3b3bc7}{search\+\_\+node\+\_\+by\+\_\+letter}} (const string \&letter)
+\item 
+\mbox{\hyperlink{struct_node}{Node}} $\ast$ \mbox{\hyperlink{class_morse_tree_aef752aa6e2e3f5748e0a9b5989bb14dd}{search\+\_\+node\+\_\+by\+\_\+code}} (const string \&code)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_morse_tree_a5561b617589bd1e3cb4bb00b994043b4}\label{class_morse_tree_a5561b617589bd1e3cb4bb00b994043b4}} 
+\index{MorseTree@{MorseTree}!MorseTree@{MorseTree}}
+\index{MorseTree@{MorseTree}!MorseTree@{MorseTree}}
+\doxysubsubsection{\texorpdfstring{MorseTree()}{MorseTree()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Morse\+Tree\+::\+Morse\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
+Default constructor \mbox{\Hypertarget{class_morse_tree_a426d61303560245b80b1cbccb9e0f460}\label{class_morse_tree_a426d61303560245b80b1cbccb9e0f460}} 
+\index{MorseTree@{MorseTree}!MorseTree@{MorseTree}}
+\index{MorseTree@{MorseTree}!MorseTree@{MorseTree}}
+\doxysubsubsection{\texorpdfstring{MorseTree()}{MorseTree()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Morse\+Tree\+::\+Morse\+Tree (\begin{DoxyParamCaption}\item[{const string \&}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
+Default constructor with file path where Morse\textquotesingle{}s codes are defined. Read file where each line contain a letter and its corresponding encoded string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & The file path where Morse\textquotesingle{}s codes are defined. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_morse_tree_a258c713f160ce7aa889327a1ecb24217}\label{class_morse_tree_a258c713f160ce7aa889327a1ecb24217}} 
+\index{MorseTree@{MorseTree}!````~MorseTree@{$\sim$MorseTree}}
+\index{````~MorseTree@{$\sim$MorseTree}!MorseTree@{MorseTree}}
+\doxysubsubsection{\texorpdfstring{$\sim$MorseTree()}{~MorseTree()}}
+{\footnotesize\ttfamily Morse\+Tree\+::$\sim$\+Morse\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
+De-\/\+Constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_morse_tree_aef752aa6e2e3f5748e0a9b5989bb14dd}\label{class_morse_tree_aef752aa6e2e3f5748e0a9b5989bb14dd}} 
+\index{MorseTree@{MorseTree}!search\_node\_by\_code@{search\_node\_by\_code}}
+\index{search\_node\_by\_code@{search\_node\_by\_code}!MorseTree@{MorseTree}}
+\doxysubsubsection{\texorpdfstring{search\_node\_by\_code()}{search\_node\_by\_code()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} $\ast$ Morse\+Tree\+::search\+\_\+node\+\_\+by\+\_\+code (\begin{DoxyParamCaption}\item[{const string \&}]{code }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
+Search a \mbox{\hyperlink{struct_node}{Node}} by a code
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & A code needs to be searched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_node}{Node}} A node containing the code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_morse_tree_a03ba2ea63d988323cfdcc6a59d3b3bc7}\label{class_morse_tree_a03ba2ea63d988323cfdcc6a59d3b3bc7}} 
+\index{MorseTree@{MorseTree}!search\_node\_by\_letter@{search\_node\_by\_letter}}
+\index{search\_node\_by\_letter@{search\_node\_by\_letter}!MorseTree@{MorseTree}}
+\doxysubsubsection{\texorpdfstring{search\_node\_by\_letter()}{search\_node\_by\_letter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} $\ast$ Morse\+Tree\+::search\+\_\+node\+\_\+by\+\_\+letter (\begin{DoxyParamCaption}\item[{const string \&}]{letter }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Author}
+Thuan Bach 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Nov 19, 2021
+\end{DoxyDate}
+Search a node by letter
+
+
+\begin{DoxyParams}{Parameters}
+{\em letter} & A letter needs to be searched. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_node}{Node}} A node containing the letter. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/tree/\mbox{\hyperlink{_morse_tree_8h}{Morse\+Tree.\+h}}\item 
+src/tree/\mbox{\hyperlink{_morse_tree_8cpp}{Morse\+Tree.\+cpp}}\end{DoxyCompactItemize}
